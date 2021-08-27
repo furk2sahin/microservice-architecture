@@ -52,5 +52,4 @@ public class SimpleHrService implements HrService{
 		}
 		return new FireEmployeeResponse("success");
 	}
-
 }

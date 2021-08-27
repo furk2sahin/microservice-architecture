@@ -21,9 +21,6 @@ public class ModelMapperConfig {
 		var mapper = new ModelMapper();
 		mapper.addConverter(employeeDocument2Employee, EmployeeDocument.class, Employee.class);
 		mapper.addConverter(employee2EmployeeDocument, Employee.class, EmployeeDocument.class);
-		mapper.addConverter(employeeEntity2Employee, EmployeeEntity.class, Employee.class);
-		mapper.addConverter(employee2EmployeeEntity, Employee.class, EmployeeEntity.class);
-		mapper.addConverter(employeeEvent2EmployeeKafkaEvent, EmployeeEvent.class, EmployeeKafkaEvent.class);
 		return mapper;
 	}
 	

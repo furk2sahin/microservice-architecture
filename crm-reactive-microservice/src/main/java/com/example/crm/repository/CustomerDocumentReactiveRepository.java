@@ -10,8 +10,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface CustomerDocumentReactiveRepository extends ReactiveMongoRepository<CustomerDocument, String> {
-	//List<CustomerDocument> findAllByBirthYear(int birthYear, Pageable page);
-	// All functions are non-blocking/asynchronous functions!
 	Flux<CustomerDocument> findAllByBirthYear(int birthYear, Pageable page);
 	@Query("{}")
 	Flux<CustomerDocument> findAllByPage(Pageable page);

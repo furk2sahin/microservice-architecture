@@ -50,7 +50,4 @@ public class MongoRepositoryEmployeeAdapter implements EmployeeRepository{
 		var employee = modelMapper.map(empDoc, Employee.class);
 		return Optional.of(employee);
 	}
-	
-	
-	
 }

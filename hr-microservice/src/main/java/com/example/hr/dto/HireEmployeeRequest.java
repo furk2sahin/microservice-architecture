@@ -12,26 +12,18 @@ import com.example.hr.validation.TcKimlikNo;
 public class HireEmployeeRequest {
 	@TcKimlikNo 
 	private String identity;
-	
 	@Pattern(regexp = "^[A-Z][a-z]+$")
 	private String firstName;
-	
 	@Pattern(regexp = "^[A-Z][a-z]+$")
 	private String lastName;
-	
 	@Iban
 	private String iban;
-	
 	@Min(3_000)
 	private double salary;
-	
 	private Department department;
-	
 	private JobType type;
 	@Min(1950)
-	
 	private int birthYear;
-	
 	private String photo;
 
 	public HireEmployeeRequest(String identity, @Pattern(regexp = "^[A-Z][a-z]+$") String firstName,
